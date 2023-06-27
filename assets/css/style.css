@@ -1,26 +1,27 @@
+  /* properties to make all text black */
   * {
     color: black;
   }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.3;
-  } 
-
+/* properties to align the header and its child nav */
   header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-left: 1%;
     padding-right: 1%;
     background-color: rgb(193, 177, 155);
     color: #fff;
   }
+  /* adding a background color to header */
   h1 {
     background-color: rgb(139, 139, 113);
-    padding-left: 10%;
+    padding: 1%;
   }
+  /* positioning the nav bar */
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* adding font and spacing to nav ul */
   nav ul {
     display: flex;
     justify-content: space-between;
@@ -29,44 +30,73 @@
     font-family: Helvetica, Arial, sans-serif;
   }
 
+  /* adding max width to hero image */
   section img {
     max-width: 100%;
   }
-
+  /* a parent for the web developer text */
+  .relative {
+    position: relative;
+  }
+/* positioning for the web developer text */
+  .web-dev {
+    position: absolute;
+    bottom:  10px;
+    right: 30px;
+    padding: 1%;
+    background-color: rgb(139, 139, 113);
+  }
+/* adding flex to the main About Me */
   main {
     display: flex;
     flex-direction: column;
     padding: 2%;
     border-left: solid;
   }
-
+/* adding positioning to "About Me" h2 */
   main h2 {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: start;
   }
-
-  footer {
-    border-left: solid;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-  footer ul {
-    display: flex;
-    flex-direction: row;
-  }
-
-  footer li {
-    margin: 0px 30px;
-  }
-
+  /* positioning the work section */
   #work {
     border-left: solid;
     text-align: center;
   }
 
+  /* positioning the "work" h2 */
+  #work h2 {
+    display: flex;
+    justify-content: start;
+    padding-left: 2%;
+  }
+/* adding structure to footer Contact section */
+  #contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-left: solid;
+    }
+  
+/* adding structure to the contact ul */
+  #contact ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    list-style-type: none;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+/* adding spacing to the contact li */
+  #contact li {
+    margin: 0px 30px;
+  }
+
+  /* positioning the contact h2 */
+  #contact h2 {
+    padding-left: 2%;
+  }
+/* adding hover effect properties to the Horiseon screenshot */
   #hori {
     padding: 5px;
     width: 81%;
@@ -78,7 +108,7 @@
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
   }
-
+/* adding hover effect properties to the rest of the screenshot */
   #app {
     display: inline;
     padding: 5px;
@@ -92,24 +122,26 @@
     transition: .3s ease-in-out;
   }
 
-
+/* adding hover effect to the Horiseon screenshot */
     #hori:hover {
     -webkit-filter: grayscale(100%) blur(3px);
     filter: grayscale(100%) blur(3px);
   }
-
+/* adding hover effect properties to the rest of the screenshots */
   #app:hover {
     -webkit-filter: grayscale(100%) blur(3px);
     filter: grayscale(100%) blur(3px);
   }
 
-  .relative {
-    position: relative;
-  }
+  @media screen and (max-width: 480px) {
+    header, nav ul, footer ul, main, #contact, #contact ul {
+      flex-direction: column;
+    }
 
-  .web-dev {
-    position: absolute;
-    bottom:  10px;
-    right: 30px;
-    background-color: rgb(139, 139, 113);
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  }
+  
   }
