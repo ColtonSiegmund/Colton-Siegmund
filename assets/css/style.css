@@ -114,10 +114,11 @@
     position: relative;
   }
 
+  /* positioning Horiseon title */
   .horiseon {
     position: absolute;
     right: 120px;
-    top: 500px;
+    top: 480px;
     padding: 1%;
     background-color: rgb(139, 139, 113);
   }
@@ -137,6 +138,7 @@
     position: relative;
   }
 
+  /* positioning Carment Kiara title */
   .ck {
     position: absolute;
     bottom: 170px;
@@ -144,7 +146,7 @@
     padding: 1%;
     background-color: rgb(139, 139, 113);
   }
-
+/* positioning Coaches Coalition title */
   .coach { 
     position: absolute;
     bottom: 170px;
@@ -152,6 +154,7 @@
     padding: 1%;
     background-color: rgb(139, 139, 113);}
 
+    /* positioning Colton Siegmund title */
     .cs 
       {position: absolute;
       bottom: 10px;
@@ -159,6 +162,7 @@
       padding: 1%;
       background-color: rgb(139, 139, 113);}
 
+      /* positioning Pre-Work Study Guide title */
       .pre 
         {position: absolute;
         bottom: 10px;
@@ -177,11 +181,13 @@
     filter: grayscale(100%) blur(3px);
   }
 
+  /* properties for phone screen size */
   @media screen and (max-width: 480px) {
     header, nav ul, footer ul, main, #contact, #contact ul {
       flex-direction: column;
     }
 
+    /* properties for tablet screen size */
   @media screen and (max-width: 768px) {
     header {
       flex-direction: column;
