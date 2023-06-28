@@ -1,13 +1,13 @@
   /* properties to make all text black */
   * {
     color: black;
+    background-color: rgb(178, 161, 138);
   }
 /* properties to align the header and its child nav */
   header {
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 0%;
+    padding-right: 0%;
     background-color: rgb(193, 177, 155);
-    color: #fff;
   }
   /* adding a background color to header */
   h1 {
@@ -20,6 +20,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background-color: rgb(139, 139, 113);
+    padding-right: 1%;
   }
   /* adding font and spacing to nav ul */
   nav ul {
@@ -28,6 +30,7 @@
     min-width: 300px;
     list-style-type: none;
     font-family: Helvetica, Arial, sans-serif;
+    background-color: rgb(139, 139, 113);
   }
 
   /* adding max width to hero image */
@@ -62,6 +65,7 @@
   #work {
     border-left: solid;
     text-align: center;
+    position: relative;
   }
 
   /* positioning the "work" h2 */
@@ -107,7 +111,17 @@
     filter: grayscale(0) blur(0);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
+    position: relative;
   }
+
+  .horiseon {
+    position: absolute;
+    right: 120px;
+    top: 500px;
+    padding: 1%;
+    background-color: rgb(139, 139, 113);
+  }
+
 /* adding hover effect properties to the rest of the screenshot */
   #app {
     display: inline;
@@ -120,7 +134,37 @@
     filter: grayscale(0) blur(0);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
+    position: relative;
   }
+
+  .ck {
+    position: absolute;
+    bottom: 170px;
+    left: 120px;
+    padding: 1%;
+    background-color: rgb(139, 139, 113);
+  }
+
+  .coach { 
+    position: absolute;
+    bottom: 170px;
+    right: 120px;
+    padding: 1%;
+    background-color: rgb(139, 139, 113);}
+
+    .cs 
+      {position: absolute;
+      bottom: 10px;
+      left: 120px;
+      padding: 1%;
+      background-color: rgb(139, 139, 113);}
+
+      .pre 
+        {position: absolute;
+        bottom: 10px;
+        right: 120px;
+        padding: 1%;
+        background-color: rgb(139, 139, 113);}
 
 /* adding hover effect to the Horiseon screenshot */
     #hori:hover {
